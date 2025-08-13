@@ -1,5 +1,34 @@
 # lab-dns-tf
+
 tf module for configuration of nginxproxymanager, pfsense dns, and cloudflare dns
+
+Prevents repetitive web configuration, and having to set the same values in multiple places
+
+## nginxproxymanager
+
+Creates proxy record with the following properties
+
+```hcl
+  allow_websocket_upgrade = true
+  block_exploits          = true
+
+  certificate_id = var.nginxproxymanager.certificate.id
+
+  ssl_forced      = true
+  hsts_enabled    = true
+  hsts_subdomains = true
+  http2_support   = true
+```
+
+## pfsense
+
+Creates an A record in the pfsense unbound dns resolver
+
+## cloudflare
+
+Optionally creates a CNAME record in your domain
+
+---
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
