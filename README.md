@@ -12,8 +12,6 @@ Creates proxy record with the following properties
   allow_websocket_upgrade = true
   block_exploits          = true
 
-  certificate_id = var.nginxproxymanager.certificate.id
-
   ssl_forced      = true
   hsts_enabled    = true
   hsts_subdomains = true
