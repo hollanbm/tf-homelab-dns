@@ -36,17 +36,17 @@ Optionally creates a CNAME record in your domain
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~>1.9 |
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | 5.8.2 |
-| <a name="requirement_nginxproxymanager"></a> [nginxproxymanager](#requirement\_nginxproxymanager) | ~> 1.2.0 |
-| <a name="requirement_pfsense"></a> [pfsense](#requirement\_pfsense) | 0.20.0 |
+| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | >= 5.8.2 |
+| <a name="requirement_nginxproxymanager"></a> [nginxproxymanager](#requirement\_nginxproxymanager) | >= 1.2.0 |
+| <a name="requirement_pfsense"></a> [pfsense](#requirement\_pfsense) | >= 0.20.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 5.8.2 |
-| <a name="provider_nginxproxymanager"></a> [nginxproxymanager](#provider\_nginxproxymanager) | ~> 1.2.0 |
-| <a name="provider_pfsense"></a> [pfsense](#provider\_pfsense) | 0.20.0 |
+| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | >= 5.8.2 |
+| <a name="provider_nginxproxymanager"></a> [nginxproxymanager](#provider\_nginxproxymanager) | >= 1.2.0 |
+| <a name="provider_pfsense"></a> [pfsense](#provider\_pfsense) | >= 0.20.0 |
 
 ## Modules
 
@@ -56,9 +56,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [cloudflare_dns_record.cname](https://registry.terraform.io/providers/cloudflare/cloudflare/5.8.2/docs/resources/dns_record) | resource |
+| [cloudflare_dns_record.cname](https://registry.terraform.io/providers/cloudflare/cloudflare/latest/docs/resources/dns_record) | resource |
 | [nginxproxymanager_proxy_host.proxy_host](https://registry.terraform.io/providers/Sander0542/nginxproxymanager/latest/docs/resources/proxy_host) | resource |
-| [pfsense_dnsresolver_hostoverride.dns_entry](https://registry.terraform.io/providers/marshallford/pfsense/0.20.0/docs/resources/dnsresolver_hostoverride) | resource |
+| [pfsense_dnsresolver_hostoverride.dns_entry](https://registry.terraform.io/providers/marshallford/pfsense/latest/docs/resources/dnsresolver_hostoverride) | resource |
 
 ## Inputs
 
