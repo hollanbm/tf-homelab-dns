@@ -7,8 +7,4 @@ resource "cloudflare_dns_record" "cname" {
   type    = "CNAME"
   content = var.cloudflare.target
   proxied = false
-  tags = [
-    "owner:hollanbm",
-    "project:tf-homelab"
-  ]
 }
