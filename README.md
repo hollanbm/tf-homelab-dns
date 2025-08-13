@@ -1,4 +1,4 @@
-# lab-dns-tf
+# tf-homelab-dns
 
 tf module for configuration of nginxproxymanager, pfsense dns, and cloudflare dns
 
