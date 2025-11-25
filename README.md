@@ -34,17 +34,17 @@ Optionally creates a CNAME record in your domain
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~>1.9 |
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | >= 5.8.2 |
-| <a name="requirement_nginxproxymanager"></a> [nginxproxymanager](#requirement\_nginxproxymanager) | >= 1.2.0 |
-| <a name="requirement_pfsense"></a> [pfsense](#requirement\_pfsense) | >= 0.20.0 |
+| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | >= 5, < 6 |
+| <a name="requirement_nginxproxymanager"></a> [nginxproxymanager](#requirement\_nginxproxymanager) | >= 1, < 2 |
+| <a name="requirement_pfsense"></a> [pfsense](#requirement\_pfsense) | >= 0, < 1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | >= 5.8.2 |
-| <a name="provider_nginxproxymanager"></a> [nginxproxymanager](#provider\_nginxproxymanager) | >= 1.2.0 |
-| <a name="provider_pfsense"></a> [pfsense](#provider\_pfsense) | >= 0.20.0 |
+| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | >= 5, < 6 |
+| <a name="provider_nginxproxymanager"></a> [nginxproxymanager](#provider\_nginxproxymanager) | >= 1, < 2 |
+| <a name="provider_pfsense"></a> [pfsense](#provider\_pfsense) | >= 0, < 1 |
 
 ## Modules
 
@@ -63,7 +63,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_cloudflare"></a> [cloudflare](#input\_cloudflare) | Cloudflare CNAME configuration | <pre>object({<br/>    zone_id = string<br/>    source  = string<br/>    target  = string<br/>  })</pre> | <pre>{<br/>  "source": "",<br/>  "target": "",<br/>  "zone_id": ""<br/>}</pre> | no |
-| <a name="input_nginxproxymanager"></a> [nginxproxymanager](#input\_nginxproxymanager) | n/a | <pre>object({<br/>    certificate = object({<br/>      id = number<br/>    })<br/>    subdomains      = list(string)<br/>    domain_name     = string<br/>    forward_scheme  = optional(string, "http")<br/>    forward_host    = string<br/>    forward_port    = number<br/>    caching_enabled = optional(bool, true)<br/>  })</pre> | n/a | yes |
+| <a name="input_nginxproxymanager"></a> [nginxproxymanager](#input\_nginxproxymanager) | n/a | <pre>object({<br/>    certificate = object({<br/>      id = number<br/>    })<br/>    subdomains      = list(string)<br/>    domain_name     = string<br/>    forward_scheme  = optional(string, "http")<br/>    forward_host    = string<br/>    forward_port    = number<br/>    caching_enabled = optional(bool, true)<br/>    advanced_config = optional(string, "")<br/>  })</pre> | n/a | yes |
 | <a name="input_pfsense"></a> [pfsense](#input\_pfsense) | n/a | <pre>object({<br/>    dest_addresses = list(string)<br/>  })</pre> | n/a | yes |
 
 ## Outputs

@@ -9,6 +9,7 @@ variable "nginxproxymanager" {
     forward_host    = string
     forward_port    = number
     caching_enabled = optional(bool, true)
+    advanced_config = optional(string, "")
   })
 }
 
