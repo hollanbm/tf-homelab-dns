@@ -17,4 +17,6 @@ resource "nginxproxymanager_proxy_host" "proxy_host" {
   hsts_enabled    = true
   hsts_subdomains = true
   http2_support   = true
+
+  locations = var.nginxproxymanager.locations
 }
