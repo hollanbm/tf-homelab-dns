@@ -4,6 +4,10 @@ tf module for configuration of nginxproxymanager, pfsense dns, and cloudflare dn
 
 Prevents repetitive web configuration, and having to set the same values in multiple places
 
+## QuickStart
+
+See [examples](examples/)
+
 ## nginxproxymanager
 
 Creates proxy record with the following properties
