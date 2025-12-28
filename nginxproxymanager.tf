@@ -7,8 +7,8 @@ resource "nginxproxymanager_proxy_host" "proxy_host" {
   forward_port   = var.nginxproxymanager.forward_port
 
   caching_enabled         = var.nginxproxymanager.caching_enabled
-  allow_websocket_upgrade = true
-  block_exploits          = true
+  allow_websocket_upgrade = var.nginxproxymanager.allow_websocket_upgrade
+  block_exploits          = var.nginxproxymanager.block_exploits
   advanced_config         = var.nginxproxymanager.advanced_config
 
   certificate_id = var.nginxproxymanager.certificate.id
