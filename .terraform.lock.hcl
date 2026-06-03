@@ -3,8 +3,15 @@
 
 provider "registry.opentofu.org/cloudflare/cloudflare" {
   version     = "5.8.2"
-  constraints = "5.8.2"
+  constraints = ">= 5.0.0, < 6.0.0"
   hashes = [
+    "h1:43TcBWSw1urQjMH0lOiDJ6l0A69Kgz5ZONMQXYiwHSM=",
+    "h1:Pr/cE5WzLhn6E8aZ5jlBz+EfH1F8EVxFIO8uQiwMXsc=",
+    "h1:YalSVofkStvVFzDgDdmQ+DWm9pwBtunliPJ+pL7hcNY=",
+    "h1:aCyMzmeilY3JifEhNMuLlA8qO/e+jpfrMP6wsq+kmeg=",
+    "h1:bN3ufnESanjBPS1e0XkA/f/UPN73rUE92qgGcT5ExPI=",
+    "h1:j46o+tJuP4dYqwlhpt7YSXP67yLXkllfHy5m1dV+CIw=",
+    "h1:q9p622Nl/BMW9QUlnGIgFaYF7O94u7bfif48OQ0H9HE=",
     "h1:z98+LUiN1tOYuLbtBS2gcDuH1XD+BMPGXHuuWoTEddI=",
     "zh:92d133a074a8a95143861960508501711a95e0b267c60dbc722eec0a68053e08",
     "zh:95b1f349c59d226d9005c49b5ac61e856492f75d8be3ca30954a91512f2ebecf",
@@ -20,9 +27,22 @@ provider "registry.opentofu.org/cloudflare/cloudflare" {
 
 provider "registry.opentofu.org/marshallford/pfsense" {
   version     = "0.20.0"
-  constraints = "0.20.0"
+  constraints = ">= 0.0.0, < 1.0.0"
   hashes = [
+    "h1:1tgdPa/LwitSvzLCWfUPmDaqjXIYXxn5yNTMJxYyilo=",
+    "h1:7Wt2+4rx7eAtIJ1PG9KwjgaeiqYGCI3lbJ/whOaoI14=",
+    "h1:KXo7YYXapGKPbfOmTV9RH8W3g5WAUMFfBXC2eomBj78=",
+    "h1:Rs6CIA/RqwEsYuOGJu6eWPcLZrgk+LhXjh3NDsE80CY=",
+    "h1:SdQ0KQeYBBotVOpjhOMzoI8oRVJw+T674p/cvoPsuW4=",
+    "h1:URPdM20chnwEGIAJglFzsXJC8pRAMDLPp2A+/jEdwW0=",
+    "h1:WNQL+V1SGDTi6QJadas2n9c9cu80IIUy4pLrgnBVGhM=",
     "h1:d4Doy13H2DILmNKbLcXZ6zf/tAc0FqSbi4neJF4q4zw=",
+    "h1:ir/Yspmxj7ZPKzjtZYoANWej7wL3yE0t6SmXCvRv6Co=",
+    "h1:o/sX/9Oo3Q+8BJMwi1dHzBaZC3FuGLl0KzyeUD9hXuQ=",
+    "h1:pza1IvybkQ+7/2TySPnpmdA81ykTjzxYJOWyvYDxmvE=",
+    "h1:rMBQtqa3sB68LNBNfnb7XjUu6XmTEyLrL/iIJULO3iw=",
+    "h1:st3qiNlyOFzQOlGkZqBwQwerhWXGjjxZNEaO/cPAgfE=",
+    "h1:ub7kgPuT108D6KNrIkZRAiv5MU2srTqh2kZhChk0rkA=",
     "zh:0d6e38cc8ca8c6ce984591e83eb3f767ec902830989e4b0fa2a98f56a9a218f0",
     "zh:0f6435e98ee57e3b32821100af7043be6c896dd31c984c561a385ff39bbefce9",
     "zh:1f4a5753991352b27eb3f1bc4eb691482e9c2ec05790279f467a198ccc25932f",
@@ -38,28 +58,5 @@ provider "registry.opentofu.org/marshallford/pfsense" {
     "zh:e3b5b9f43dd8cdb6632d49b47ef00d598ac7a130ac05e7608f19295441d58576",
     "zh:f3395c2bceeab163e7fc4961bc3f7cdd2b42fa8ae652fd2bec9503801e68a821",
     "zh:f511be37716c016a6437552d6808af20a775e5d9b0bb7f78ced4f4f67dc634d3",
-  ]
-}
-
-provider "registry.opentofu.org/sander0542/nginxproxymanager" {
-  version     = "1.2.1"
-  constraints = "~> 1.2.0"
-  hashes = [
-    "h1:KT0xEhseideYUsBclaqIrk7OrXT2glDU4SblUh9CIVg=",
-    "zh:1919bc8b0db405a0a78b412e77a6530201b097f6672336f171bf7af260f9e800",
-    "zh:1ba0b300ac2e2e91773301567c7fdf66db974bfba9ce72f20e858cd4e18c3bb0",
-    "zh:389fb006b7dbf00c557a289529e80acca43caea18b1972c2a66fa1b3704a8cc6",
-    "zh:450f4446453b9612ebf15b489f04038c46a74f5b81d7d7b3e3a7fc8434e168ce",
-    "zh:48c19d626006b501505730d4dace6db3a77dc1e9be46bb48da7aeb604edbc649",
-    "zh:56c9c630a25c336a0dc10762968e7df5acea02e099ea73491fe908399fb72f90",
-    "zh:5933453a9a458e91f11641f7e358b21391a82c9eaedd326785f68ff35b91b76e",
-    "zh:73842db83da8adb27564ed07a0b2feb77a04ac18bb6fc341ba4e461aab3ea701",
-    "zh:890df766e9b839623b1f0437355032a3c006226a6c200cd911e15ee1a9014e9f",
-    "zh:99c6d11b36d0626f5e4bc17e33d30896bc05f80fecf62df8df4d6c17ca7273c2",
-    "zh:af4378e77ae62754e530c9132867347458559ad2685d9d07d8c6e872e044e3a3",
-    "zh:c75b26f45795f01a36dc10fc8d1b7ebdf8d25b27735d4a72457c71613378cf4f",
-    "zh:c93af244de7a6259962a909849d50872152f7ccb8bece4607ea04a66445f553e",
-    "zh:ccaee0cbf77335f868104cb334a10929e31c18823c560c3ecb9ad66c76fd3245",
-    "zh:e101b713a59e26f08ce5f3d0aae337c224d1ff8078c4ff24e17427c053b92200",
   ]
 }
